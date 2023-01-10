@@ -15,11 +15,7 @@ class MyClient(discord.Client):
         print('Message from {0.author}: {0.content}', format(message))
         if message.content == '?regras':
             await message.channel.send(f'**{message.author.name} seu lindo!**{os.linesep}As regras do servidor são: {os.linesep}1. Não desrespeitar os membros{os.linesep}2. Respeitar a 1ª regra{os.linesep}{os.linesep}\t\t\t**Divirta-se!** :star_struck:')
-        
-        if message.content == '?limpar':
-            await message.channel.send('Limpando...')
-            sleep(3)
-            await message.channel.send('**Retardado kkkk**')
+
 
 
 client = MyClient(intents=intents)
