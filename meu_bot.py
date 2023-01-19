@@ -51,4 +51,4 @@ class MyClient(discord.Client):
 
 
 client = MyClient(intents=intents)
-client.run('MTA2MjQ4MDI0MzU4OTM5ODYwMQ.Grh0pY.x7JH3r9rRE1Ckb_OxH8euMRodDUi3neXONMAyM')
+client.run('TOKEN AQUI')
