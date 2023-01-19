@@ -1,0 +1,36 @@
+Comando para instalar discord.py
+
+py -3 -m pip install -U discord.py
+
+----------------------------------------------
+
+- Site discord developer: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGdxXzNEWC1vaUpnMTdpTlBzYmRORk9FLUVxd3xBQ3Jtc0tsQk5BRFdIelBMeWR2T1k3WGp2RHM0VTFUaE11VXlJVktjM09VLUN2aU1mbFdVWFl4V3h0c2sycm9maWZiMGU4WHdXZTNrbHA3N1ZNV3BwaU9qOU5odXBTYmVrb3lQV1I4ZFUwWU51NjJ2cF9ta1BRaw&q=https%3A%2F%2Fdiscord.com%2Fdevelopers%2Fapplications&v=2q7fzpPDcGg
+
+1. New Aplication
+2. Bot Add
+# Deixar marcado como público
+# Marcar Server Members Intent (Dar as boas vindas aos novos membros)
+
+Para de fato adicionar o bot ao servidor
+- Site de permissões do bot:https://discordapi.com/permissions.html
+
+Pra conseguir o ID 
+1.General information
+2.Aplication ID -- Copy
+
+Abrir o VSCODE
+# Criar arquivo .py
+# CÓDIGO #
+__________________________________________________________________________
+import discord
+
+class MyClient(discord.Client):
+    async def on_ready(self):
+        print('Logged on as {0}!'.format(self.user))
+
+    async def on_message(self, message):
+        print('Message from {0.author}: {0.content}', format(message))
+
+client = MyClient()
+client.run('My Token goes here') # Ir no site do bot, e colar o token aqui
+___________________________________________________________________________
